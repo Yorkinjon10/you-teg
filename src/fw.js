@@ -11,11 +11,13 @@ import { faEllipsisV } from "@fortawesome/free-solid-svg-icons";
 import { faPaperclip } from "@fortawesome/free-solid-svg-icons";
 import { faSmile } from "@fortawesome/free-solid-svg-icons";
 import { faMicrophone } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 library.add( faTimes, faCopy, faBox, faLock, faUsers, faSearch, faWindowRestore, faEllipsisV, faPaperclip, faSmile, faMicrophone );
 export const Fa = {
     faTimes: <FontAwesomeIcon icon={faTimes} />,
     faCopy: <FontAwesomeIcon icon={faCopy} />,
     faBox: <FontAwesomeIcon icon={faBox} />,
+    faBars: <FontAwesomeIcon icon={faBars} />,
     faLock: <FontAwesomeIcon icon={faLock} />,
     faUsers: <FontAwesomeIcon icon={faUsers} />,
     faSearch: <FontAwesomeIcon icon={faSearch} />,

@@ -3,7 +3,7 @@ import { ReactDOM } from 'react';
 import {Chats} from './src';
 import './index.css';
 import './bootstrap.css';
- 
+  
 export const ChatList = ()=> {
     return (
         <section className="chatlist"> {
