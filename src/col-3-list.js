@@ -1,9 +1,9 @@
 import React from 'react';
-import { ReactDOM } from 'react';
+import ReactDOM from 'react-dom';
 import {Chats} from './src';
 import './index.css';
 import './bootstrap.css';
-  
+import { Fa } from './fw';
 export const ChatList = ()=> {
     return (
         <section className="chatlist"> {
@@ -28,7 +28,7 @@ const { id, name, image, uploadedDate, typeOfVideos, chanelTitle } = props.chat;
     	        </div>
     	        <div className="user-text pl-2 d-flex flex-column justify-content-between">
     		    <div className="d-flex justify-content-between">
-    			    <h3 className="h6 h-6"><i className="fas fa-users users"></i>{name}</h3>
+    			    <h3 className="h6 h-6"><i className="fas fa-users users">{Fa.faUsers}</i>{name}</h3>
     			    <span className="text-muted sending-time">{uploadedDate}</span>
     		    </div>
         	    <div className="d-flex align-items-end justify-content-between">

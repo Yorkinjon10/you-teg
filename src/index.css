@@ -22,6 +22,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 18px;
 }
+i {
+  margin-bottom: 10px;
+}
 .user-img {
   width: 60px;
   height: 60px;
@@ -34,10 +37,6 @@ body {
 .user-text {
   width: 80%;
 }
-/* i {
-  color: rgba();
-  cursor: pointer;
-} */
 .tg-top {
   position: fixed;
   top: 0;
@@ -50,7 +49,6 @@ body {
 }
 .tg-icons {
   min-height: 100%;
-  padding-top: 6px;
   padding-right: 0;
   width: 140px;
   margin: 0 auto;
@@ -75,8 +73,12 @@ body {
 }
 .menu-btn {
   color: #000;
-  margin-left: 13px;
-  margin-right: 9px;
+}
+.menu-btn:focus {
+  box-shadow: none !important;
+}
+.locker:hover {
+  color: #000fff;
 }
 .fas.fa-lock,
 .fas.fa-bars,
@@ -84,7 +86,7 @@ body {
   font-size: 20px;
 }
 .col-one-top {
-  margin-top: 6px;
+  /* margin-top: 6px; */
   position: sticky;
   top: 0;
   z-index: 3;
@@ -118,7 +120,6 @@ body {
   padding: 3px;
 }
 
-/*
 .sending-time {
   padding-bottom: 2px;
 } /*
@@ -173,13 +174,16 @@ body {
 .col-nine-icon {
   margin-left: 15px;
   margin-right: 5px;
+}*/
+.not-available-btn {
+  margin-right: 10px;
 }
 #user-text-id {
   padding: 3px;
 }
 .author-name {
-  margin-bottom: 0;
-}*/
+  margin-bottom: 0 !important;
+}
 .search-top {
   width: 100.3%;
   height: 57px;
@@ -193,13 +197,19 @@ body {
 }
 .search-top {
   width: 103.5%;
-}
+}*/
 .header-top {
   padding: 5px 0 5px 10px;
 }
-.chat-window {
-  background-image: url(../image/tg-back.png);
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-} */
+.col-six-one {
+  background-color: rgb(199 163 163 / 90%);
+}
+.home,
+.products,
+.reports {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}

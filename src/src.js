@@ -1,5 +1,3 @@
-import  React from 'react';
-import { ReactDOM } from 'react';
 
 export const Chats = [
 {   id: "js1",
