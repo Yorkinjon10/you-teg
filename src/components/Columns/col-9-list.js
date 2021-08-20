@@ -1,15 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import './bootstrap.css';
-import { Chats } from './src';
-import { Fa } from './fw'; 
-
+import '../../index.css';
+import '../../bootstrap.css';
+import {FrontendDefault} from '../Data/src';
+import { Fa } from '../FontAwesomeIcons/fw';
+ 
 export function ColNine () {
 	return (
   <div className="col-sm-9 gx-0 chat-window"
 	 style={{  
-  backgroundImage: "url(" + "/images/tgbg.png" + ")",
+  backgroundImage: "url(" + "../../images/tgbg.png" + ")",
   backgroundPosition: 'center',
 	backgroundAttachment: 'fixed',
   backgroundSize: 'cover',
@@ -17,8 +16,8 @@ export function ColNine () {
 }}>
 	    <header className="col-one-top  header-top d-flex align-items-center justify-content-between bg-light">
 		    <div>
-			    <h2 className="h5 author-name">{Chats[0].name}</h2>
-			    <small>{ Chats[0].chanelTitle }</small>
+			    <h2 className="h5 author-name">{FrontendDefault[0].name}</h2>
+			    <small>{ FrontendDefault[0].chanelTitle }</small>
 	  	  </div>
 		    <div>
 		    	<a href="#user-search-id" className="btn btn-link text-secondary">

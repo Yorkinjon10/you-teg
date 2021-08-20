@@ -8,27 +8,27 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
  const element2 = <FontAwesomeIcon icon={faTimes} />;
  const element3 = <FontAwesomeIcon icon={faHome} />;
  export const SidebarData = [
-   {
+   { 
      title: 'Home',
-     path: '/',
+     path: '/', 
      icon: element3,
      cName: 'nav-text'
    },
    {
-     title: 'Reports',
-     path: '/reports',
+     title: 'Frontend videolari',
+     path: '/frontend',
      icon: element3,
      cName: 'nav-text'
    },
    {
-     title: 'Products',
-     path: '/products',
+     title: 'Backend videolari',
+     path: '/backend',
      icon: element3,
      cName: 'nav-text'
    },
    {
-     title: 'Team',
-     path: '/team',
+     title: 'Full Stack videolari',
+     path: '/fullstack',
      icon: element3,
      cName: 'nav-text'
    },

@@ -1,24 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {Chats} from './src';
-import './index.css';
-import './bootstrap.css';
-import { Fa } from './fw';
-export const ChatList = ()=> {
-    return (
-        <section className="chatlist"> {
-            Chats.map((chat)=>{
-                const {id, name, image, uploadedDate, typeOfVideos, chanelTitle} = chat;
-                return (
-                  <Chat key={id} chat={chat}></Chat>
-                );
-            })
-        }
-        </section>
-    );
-}
-const Chat = (props) => {
-const { id, name, image, uploadedDate, typeOfVideos, chanelTitle } = props.chat;
+import '../../index.css';
+import '../../bootstrap.css'; 
+import { Fa } from '../FontAwesomeIcons/fw';
+
+export const Chat = (props) => {
+const { id, name, image, uploadedDate, typeOfVideos,numOfVideos, chanelTitle } = props.chat;
     return (
     <section className="chat">
         <ul className="list-group rounded-0">
@@ -33,7 +19,7 @@ const { id, name, image, uploadedDate, typeOfVideos, chanelTitle } = props.chat;
     		    </div>
         	    <div className="d-flex align-items-end justify-content-between">
     		        <p className="text-nowrap mb-0 text-truncate w-75 messages-amount"><span className="text-primary user-name">{typeOfVideos}</span> {chanelTitle}</p>
-    	    	    <span className="badge bg-info text-white badge-pill">51</span>
+								<span className="badge bg-info text-white badge-pill">{numOfVideos}</span>
     		    </div>
     	    </div>
   	        </a> 
