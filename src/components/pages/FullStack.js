@@ -17,5 +17,4 @@ function FUllStack() {
     </div>
   )
 }
-
-export default FUllStack 
+export default FUllStack;

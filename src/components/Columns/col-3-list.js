@@ -4,11 +4,15 @@ import '../../bootstrap.css';
 import { Fa } from '../FontAwesomeIcons/fw';
 
 export const Chat = (props) => {
-const { id, name, image, uploadedDate, typeOfVideos,numOfVideos, chanelTitle } = props.chat;
-    return (
+const { id, name, image, uploadedDate,videoUrl, typeOfVideos,numOfVideos, chanelTitle } = props.chat;
+	const [videoUrls, setVideoUrl] = React.useState(0);
+	const setVideo = () => {
+		setVideoUrl(videoUrl);
+	}
+	return (
     <section className="chat">
         <ul className="list-group rounded-0">
- 	        <a href="#" className="list-group-item border-0 p-2 list-group-item-action rounded-0 d-flex justify-content-between align-items-center">
+ 	        <a href="#" onClick={setVideo} className="list-group-item border-0 p-2 list-group-item-action rounded-0 d-flex justify-content-between align-items-center">
                 <div className="user-img-box">
     		        <img src={image} className="mr-2 img-fluid img-after rounded-circle user-img" alt="Farhod Dadajonov" /> 
     	        </div>
@@ -27,3 +31,16 @@ const { id, name, image, uploadedDate, typeOfVideos,numOfVideos, chanelTitle } =
     </section>
     );
 }
+export const chanelInfo = (props) => {
+	const [name, chanelTitle] = props.chanelinfo;
+
+	return (
+		<section className="chanelinfo">
+			<div>
+			    <h2 className="h5 author-name">{name}</h2>
+			    <small>{chanelTitle }</small>
+	  	  </div>
+		</section>
+	);
+}
+// rgb(0 183 134)

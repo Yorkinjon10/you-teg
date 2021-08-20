@@ -32,6 +32,9 @@ export function ColNine () {
 				<i className="fas fa-ellipsis-v">{ Fa.faEllipsisV }</i>
 			</button>
 		</div>
-	</header>
+			</header>
+			<section className="w-100">
+				<iframe src={FrontendDefault[0].videoUrl} width="560" height="315" frameborder="0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+			</section>
   </div>
 );}
