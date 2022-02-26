@@ -1,24 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Link } from 'react-router-dom';
 import './index.css';
 import './bootstrap.css';
 import { Fa } from './components/FontAwesomeIcons/fw';
 import { ColNine } from './components/Columns/col-9-list';
 import { App } from './App';
 import Navbar from './components/Navbar/Navbar';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { ReRenderedNavbar } from './components/Navbar/Navbar';
-import { NavbarToggler } from './App';
 const YouTeg = ()=> { 
   return (
     <React.Fragment>
       {/* <img src="/images/uber.png" alt="" /> */}
     <div className="tg-top">
 		  <div className="tg-icons">
-			  <i className="tg-icon" >{Fa.faBox}</i>
-				<i className="tg-icon">{Fa.faCopy}</i>
-				<i className="tg-icon">{Fa.faTimes}</i>
+			  <i className="tg-icon">{Fa.faBox}</i>
+			  <i className="tg-icon">{Fa.faCopy}</i>
+			  <i className="tg-icon">{Fa.faTimes}</i>
 		</div>
 		</div>
     {/* Col-sm-3 Part */}
